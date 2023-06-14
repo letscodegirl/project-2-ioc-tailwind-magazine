@@ -1,6 +1,18 @@
 ---
 layout: default
 title: Homepage
+text_blurbs: 
+  heading: A fascinating title 
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero ad non sit eaque sint necessitatibus. Nulla temporibus rerum consequuntur ut nostrum, totam, ducimus odio, expedita unde quibusdam adipisci architecto!
+  button:
+    text: Read more
+    url: "#"
+  image:
+    image_path: /uploads/travel/travel-1.jpg
+    alt: A placeholder alt description
+banner:
+  heading: A whole new world 
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores?
 seo:
   title: 
   description:
@@ -9,6 +21,24 @@ seo:
   keywords:
   hide-from-google: false
 ---
+
+<section>
+  <img src="{{ page.text_blurbs.image }}" 
+    alt="{{ page.text_blurbs.image.alt | default: page.text_blurbs.heading }}">
+  <h2> {{ page.text_blurbs.heading }} </h2>
+  <p> {{ page.text_blurbs.description }} </p>
+  <a href "{{ page.text_blurbs.button.url }}">
+    {{ page.text_blurbs.button.text }}
+  </a>
+</section>
+
+
+<!-- Hero banner section -->
+<section>
+
+    {% include hero-banner.html %}
+
+</section>
 
 <!-- {{site.data.site-settings.global-cta-options}} -->
 <!------------------------ Featured blog loop ------------------------>

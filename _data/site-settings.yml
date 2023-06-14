@@ -13,6 +13,13 @@ social:
 cta-shortcode:
   - web-dev
   - photography
+navigation:
+  - url: /blog
+    title: "Blog"
+  - url: /shop
+    title: "Shop"
+  - url: "#"
+    title: "Members Login"
 design:
   dark-text_color: "rgb(60,60,65)"
   medium-text_color: "rgb(90,90,95)"
