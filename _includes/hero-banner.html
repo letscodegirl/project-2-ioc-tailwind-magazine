@@ -1,6 +1,9 @@
 <section>
     <h1> {{page.banner.heading | default: page.title}} </h1>
     <p> {{page.banner.description | default: page.description}} </p>
+    {% if.page.banner.button.url and page.banner.button.text %}
+        <a href="{{page.banner.button.url}}">{{page.banner.button.text}}</a>
+    {% endif %}
     <img src="{{page.banner.image.image_path | default: page.featured_image}}"
     alt="{{page.banner.image.alt | default: page.banner.heading}}">
 </section>
