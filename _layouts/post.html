@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Hero Banner -->
-{%  %}
+{% include hero-banner.html %}
 
 <section class="p-5 bg-zinc-50">
 
@@ -14,7 +14,7 @@ layout: default
                 <span class="text-sm uppercase tracking-wide p-1 text-zinc-600"> {{ item }}</span>
             {% endfor %}
             
-            <h1 class="text-6xl font-serif mt-4 mb-8"> {{ page.title }} </h1>
+            <h2 class="text-6xl font-serif mt-4 mb-8"> {{ page.intro_heading }} </h2>
             
             <p class="text-sm uppercase tracking-wide text-zinc-600"> by <span class="font-bold"> {{ page.author }}  </span>| {{ page.date | date_to_string }} </p>
          
