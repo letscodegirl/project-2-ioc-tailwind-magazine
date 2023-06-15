@@ -1,6 +1,6 @@
 ---
 layout: modular-post
-title: Dans random trip
+title: Exploring Sumbawa
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
@@ -75,7 +75,7 @@ seo:
   social_image:
   twitter_card:
   keywords:
-  hide-from-google: false
+  hide-from-google: false  
 _comments:
   title: Max 70 characters
   social_image: landscape 1200 x 600px
