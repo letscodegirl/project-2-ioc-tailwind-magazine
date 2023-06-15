@@ -1,9 +1,15 @@
-<section>
-    <h1> {{page.banner.heading | default: page.title}} </h1>
-    <p> {{page.banner.description | default: page.description}} </p>
-    {% if.page.banner.button.url and page.banner.button.text %}
+<section class="grid grid-cols-10">
+    <div class="col-span-3 bg-sand"></div>
+    <div class="col-span-7 bg-[url('{{page.banner.image.image_path | default:page.featured_image}}')]">
+    <div class="-ml-15p py-10p px-5p">
+    
+        <h1 class="font-display text-[13vw] text-white leading-[0.9] mb-16 md:max-w-[90%]">{{page.banner.heading | default: page.title}}</h1>
+        <p class="uppercase text-white md:max-w-2xl text-2xl font-normal leading-normal"> {{page.banner.description | default: page.description}} </p>
+        {% if.page.banner.button.url and page.banner.button.text %}
         <a href="{{page.banner.button.url}}">{{page.banner.button.text}}</a>
-    {% endif %}
-    <img src="{{page.banner.image.image_path | default: page.featured_image}}"
-    alt="{{page.banner.image.alt | default: page.banner.heading}}">
+        {% endif %}
+        <!-- <img src="{{page.banner.image.image_path | default: page.featured_image}}"
+        alt="{{page.banner.image.alt | default: page.banner.heading}}"> -->
+    </div>
+    </div>
 </section>
