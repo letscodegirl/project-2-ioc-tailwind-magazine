@@ -862,6 +862,9 @@ video {
 .-ml-15p {
   margin-left: -15%;
 }
+.-ml-52 {
+  margin-left: -13rem;
+}
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -880,6 +883,9 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.ml-10 {
+  margin-left: 2.5rem;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -894,18 +900,6 @@ video {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.-ml-3 {
-  margin-left: -0.75rem;
-}
-.-ml-40 {
-  margin-left: -10rem;
-}
-.-ml-72 {
-  margin-left: -18rem;
-}
-.-ml-52 {
-  margin-left: -13rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -955,20 +949,14 @@ video {
 .w-full {
   width: 100%;
 }
+.max-w-md {
+  max-width: 28rem;
+}
 .max-w-screen-lg {
   max-width: 1024px;
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-lg {
-  max-width: 32rem;
-}
-.max-w-xl {
-  max-width: 36rem;
-}
-.max-w-md {
-  max-width: 28rem;
 }
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
@@ -983,14 +971,14 @@ video {
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-nowrap {
   flex-wrap: nowrap;
@@ -1000,6 +988,9 @@ video {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -1023,8 +1014,15 @@ video {
   border-top-width: 2px;
   border-bottom-width: 2px;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-t-2 {
   border-top-width: 2px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-rose-600 {
   --tw-border-opacity: 1;
@@ -1036,6 +1034,10 @@ video {
 }
 .bg-dark {
   background-color: rgb(63 63 70);;
+}
+.bg-sand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 209 205 / var(--tw-bg-opacity));
 }
 .bg-slate-100 {
   --tw-bg-opacity: 1;
@@ -1073,10 +1075,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
-.bg-sand {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 209 205 / var(--tw-bg-opacity));
-}
 .bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-1.jpg');
 }
@@ -1110,15 +1108,6 @@ video {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-10 {
-  padding: 2.5rem;
-}
-.p-10p {
-  padding: 10%;
-}
-.p-15p {
-  padding: 15%;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1160,6 +1149,10 @@ video {
   font-size: 2.25rem;
   line-height: 1;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1174,18 +1167,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1.2;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1207,6 +1188,9 @@ video {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-light {
   color: rgb(244 244 245);;
@@ -1255,6 +1239,16 @@ div {
 
 body {
     font-weight: 300;
+}
+
+body p {
+    margin-bottom: 1rem;
+}
+
+body a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .hover\:bg-zinc-100:hover {

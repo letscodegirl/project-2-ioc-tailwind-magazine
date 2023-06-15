@@ -3,12 +3,12 @@ layout: default
 title: Homepage
 text_blurbs: 
   heading: A fascinating heading about the site.
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero ad non sit eaque sint necessitatibus. Nulla temporibus rerum consequuntur ut nostrum, totam, ducimus odio, expedita unde quibusdam adipisci architecto!
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero ad non sit eaque sint necessitatibus. Nulla temporibus rerum consequuntur ut nostrum, totam, ducimus odio, expedita unde quibusdam adipisci architecto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores?
   button:
     text: Read more
     url: "#"
   image:
-    image_path: /uploads/travel/travel-1.jpg
+    image_path: /uploads/travel/travel-3.jpg
     alt: A placeholder alt description
 itinerary: 
   heading: Upcoming travel destinations
@@ -27,7 +27,7 @@ itinerary:
       date: 00 Month - 00 Month 2023
 banner:
   heading: A whole new world 
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores?
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores? 
   image:
     image_path: /uploads/travel/travel-1.jpg
     alt: A placeholder alt description
@@ -54,15 +54,18 @@ seo:
 <section class="grid grid-cols-2 p-5p">
   <img src="{{ page.text_blurbs.image.image_path }}" 
     alt="{{ page.text_blurbs.image.alt | default: page.text_blurbs.heading }}">
+  <div class="flex items-center">
     <div>
-  <h2 class="font-display text-6xl max-w-md text-center -ml-52"> {{ page.text_blurbs.heading }} </h2>
-  <p class="p-5p"> {{ page.text_blurbs.description }} </p>
-  <a href "{{ page.text_blurbs.button.url }}">
-    {{ page.text_blurbs.button.text }}
-  </a>
-  </div>
-</section>
-
+      
+      <h2 class="font-display text-6xl max-w-md text-center -ml-52 p-5p"> {{ page.text_blurbs.heading }} </h2>
+      <p class="ml-10"> {{ page.text_blurbs.description }} </p>
+      <a class="ml-10" href "{{ page.text_blurbs.button.url }}">
+        {{ page.text_blurbs.button.text }}
+      </a>
+    </div>
+      </div>
+    </section>
+    
 
 <!-- itinerary -->
 
@@ -71,8 +74,8 @@ seo:
   <ul>
     {% for item in page.itinerary.destinations %}
     <li>
-      <div>{{ item.location }} </div>
-      <div>{{ item.date }} </div>
+      <div> {{ item.location }} </div>
+      <div> {{ item.date }} </div>
     </li>
     {% endfor %}
   </ul>
