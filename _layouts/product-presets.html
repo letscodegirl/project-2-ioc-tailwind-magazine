@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- Header -->
+
 <section class="grid grid-cols-2">
     <div class="col-span-1">
         <h1>{{page.title}}</h1>
@@ -14,7 +16,27 @@ layout: default
     </div>
 </section>
 
+<!-- Before & After -->
 
+<section class="grid grid-cols-3">
+    <div class="col-span-2">
+        <div class="min-h-60" style="background-image: url('{{page.featured-image}}');">
+        </div>
+        <div class="grid grid-cols-6">
+            <div class="col-span-1 aspect-square" style="background-image: url('{{page.featured-image}}');"></div>
+            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+        </div>
+    </div>
+    <div class="col-span-1">
+        <h2> Before & After </h2>
+        <p>{{page.before_after_description}}</p>
+    </div>
+
+</section>
 <!-- 
     section: intro product
 

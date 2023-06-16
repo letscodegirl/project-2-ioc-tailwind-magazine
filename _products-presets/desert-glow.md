@@ -8,4 +8,6 @@ price: $35
 featured-image: /uploads/travel/blog-bg-16.jpg
 before-image: /uploads/travel/blog-bg-12.jpg
 after-image: /uploads/travel/blog-bg-16.jpg
+before_after_description: Aliqua ut ullamco elit labore. Commodo adipisicing incididunt sint fugiat Lorem anim eu. Veniam officia id excepteur mollit esse ipsum sunt occaecat sunt mollit.
+slug: desert-glow
 ---

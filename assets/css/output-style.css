@@ -937,6 +937,9 @@ video {
 .min-h-\[60\] {
   min-height: 60;
 }
+.min-h-50 {
+  min-height: 50vh;
+}
 .w-0 {
   width: 0px;
 }
@@ -982,6 +985,9 @@ video {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-nowrap {
   flex-wrap: nowrap;
