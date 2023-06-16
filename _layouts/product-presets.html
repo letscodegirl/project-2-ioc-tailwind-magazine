@@ -43,7 +43,9 @@ layout: default
     <h2>{{site.data.preset-settings.instructions.heading}}</h2>
     <p>{{site.data.preset-settings.instructions.description_html}}</p>
     </div>
-    <div class="col-span-2" style="background-image: url('{{page.featured-image}}');">{{site.data.preset-settings.instructions.video_id}}</div>
+    <div class="col-span-2" style="background-image: url('{{page.featured-image}}');">
+    {% include video.html vimeo-id=site.data.preset-settings.presets-instructions-vimeo-id %}
+    </div>
 </section>
 
 <!-- FAQ -->
@@ -56,6 +58,10 @@ layout: default
         {% endfor %}
     </div>
 </section>
+
+<!-- Related Posts -->
+
+
 
 
 <!-- 
