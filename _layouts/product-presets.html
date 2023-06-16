@@ -35,8 +35,29 @@ layout: default
         <h2> Before & After </h2>
         <p>{{page.before_after_description}}</p>
     </div>
-
 </section>
+
+<!-- How to -->
+<section class="grid grid-cols-3">
+    <div class="col-span-1">
+    <h2>{{site.data.preset-settings.instructions.heading}}</h2>
+    <p>{{site.data.preset-settings.instructions.description_html}}</p>
+    </div>
+    <div class="col-span-2" style="background-image: url('{{page.featured-image}}');">{{site.data.preset-settings.instructions.video_id}}</div>
+</section>
+
+<!-- FAQ -->
+<section>
+    <h2>FAQ's</h2>
+    <div class="flex justify-between">
+        {% for item in site.data.preset-settings.faq %}
+        <h3>{{item.question}}</h3>
+        <p>{{item.answer}}</p>
+        {% endfor %}
+    </div>
+</section>
+
+
 <!-- 
     section: intro product
 
