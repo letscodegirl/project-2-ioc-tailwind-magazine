@@ -5,9 +5,12 @@ collections:
   archives:
     output: true
     permalink: /:title
-  products:
+  products-presets:
     output: true
-    permalink: /shop/:title
+    permalink: /shop/presets/:title
+  products-guides:
+    output: true
+    permalink: /shop/guides/:title
 
 data_config:
   site-settings:

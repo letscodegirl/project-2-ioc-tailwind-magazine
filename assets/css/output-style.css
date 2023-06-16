@@ -919,14 +919,11 @@ video {
 .grid {
   display: grid;
 }
+.contents {
+  display: contents;
+}
 .hidden {
   display: none;
-}
-.aspect-landscape {
-  aspect-ratio: 3 / 2;
-}
-.aspect-portrait {
-  aspect-ratio: 4/5;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
@@ -949,6 +946,9 @@ video {
 .w-full {
   width: 100%;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .max-w-md {
   max-width: 28rem;
 }
@@ -957,6 +957,9 @@ video {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.grow {
+  flex-grow: 1;
 }
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
@@ -1070,11 +1073,50 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
+.bg-\[\] {
+  background-color: ;
+}
+.bg-\[url\] {
+  background-color: url;
+}
 .bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-1.jpg');
 }
 .bg-\[url\(\'\/uploads\/travel\/travel-2\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-2.jpg');
+}
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+.bg-\[url\(\'uploads\'\)\] {
+  background-image: url('uploads');
+}
+.bg-\[url\(\'\/uploads\/travel\'\)\] {
+  background-image: url('/uploads/travel');
+}
+.bg-\[url\(\'\/uploads\/travel\/\'\)\] {
+  background-image: url('/uploads/travel/');
+}
+.bg-\[url\(\'\/upluploads\/travel\/blog-bg-16\.jpg\'\)\] {
+  background-image: url('/upluploads/travel/blog-bg-16.jpg');
+}
+.bg-\[url\(\'\/uploads\/travel\/blog-bg-16\.jpg\'\)\] {
+  background-image: url('/uploads/travel/blog-bg-16.jpg');
+}
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+.bg-\[url\(\'\{\{\}\}\'\)\] {
+  background-image: url('{{}}');
+}
+.bg-\[url\(\'\{\{page\.featured\}\}\'\)\] {
+  background-image: url('{{page.featured}}');
+}
+.bg-\[url\(\'\{\{page\.featured-im\}\}\'\)\] {
+  background-image: url('{{page.featured-im}}');
+}
+.bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
+  background-image: url('{{page.featured-image}}');
 }
 .bg-cover {
   background-size: cover;
@@ -1116,6 +1158,10 @@ video {
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1126,20 +1172,17 @@ video {
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-8 {
-  padding-bottom: 2rem;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -1178,14 +1221,6 @@ video {
   font-size: 0.75rem;
   line-height: 1.2;
 }
-.text-lg {
-  font-size: 1.125rem;;
-  line-height: 1.2;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -1209,9 +1244,6 @@ video {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
-}
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 .text-light {
   color: rgb(244 244 245);;
@@ -1339,10 +1371,6 @@ body p {
   }
   .md\:max-w-\[90\%\] {
     max-width: 90%;
-  }
-  .md\:columns-3 {
-    -moz-columns: 3;
-         columns: 3;
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<section class="grid grid-cols-2">
+    <div class="col-span-1">
+        <h1>{{page.title}}</h1>
+        <h2>{{page.subtitle}}</h2>
+        <p>{{page.description}}</p>
+        <a href="#"> Buy Now </a>
+    </div>
+    <div class="col-span-1 bg-[url('{{page.featured-image}}')]">
+
+    </div>
+</section>
+
+
+<!-- 
+    section: intro product
+
+    grid with an image on the left, and text on the right 
+
+     one data file for presets
+
+    title
+    description
+    price
+    image
+    video => content will be in data file, taking up 2 columns / grid-cols-3, heading&contents can be in data file
+    data file with our preset
+    site-settings
+
+    for item in site.data.site-settings.navigation like this
+
+    buy button from shopify
+
+    faqs h2
+    each question h3? 
+    answers are set to be hidden 
+
+    preset or include? 
+    *required: for loop array to pull from data file 
+    -iterate through every faq and output heading, contents 
+
+    related products 
+    for loop to output multiple items in our collection 
+    even each preset (item)
+    items in anchor link 
+    where we get the info ?
+    -under product preset
+    -desert.grow.md (in the front matter of each preset)
+
+
+ -->
