@@ -9,7 +9,8 @@ layout: default
         <h1 class="text-5xl uppercase font-display tracking-widest">{{page.title}}</h1>
         <h2>{{page.subtitle}}</h2>
         <p>{{page.description}}</p>
-        <a class="mt-4 mb-4 shopify-button" href="#"> Buy Now </a>
+        {% include buy-button.html buy-button-id=page.buy-button-id %}
+        
     </div>
     <div style="background-image: url('{{page.featured-image}}');" class="col-span-1">
 

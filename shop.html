@@ -1,5 +1,15 @@
 ---
-layout: default 
+layout: post
+title: Shop
+description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
+author: Tina May
+featured_image: /uploads/blog-bg-17-shop.jpg
+featured: true
+intro_heading: This is a heading
+banner:
+    image: 
+        image_path: /uploads/blog-bg-17-shop.jpg
+        alt: A placeholder alt description
 ---
 
 <section class="p-8 max-w-screen-xl mx-auto">
@@ -11,7 +21,7 @@ layout: default
 		{% for product in site.products-presets %}
 		
 		<a href="{{product.url}}"> 
-			<img src="{{/uploads.blog-bg-1.jpg}}">
+			<img src="{{/uploads/blog-bg-17-shop.jpg}}">
 			<h4> {{product.title}}</h4>
 			<p> {{product.price}}</p>
 		</div>

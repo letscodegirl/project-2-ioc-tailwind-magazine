@@ -915,6 +915,9 @@ video {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -960,6 +963,12 @@ video {
 .min-h-\[60\] {
   min-height: 60;
 }
+.min-h-50 {
+  min-height: 50vh;
+}
+.min-h-70 {
+  min-height: 70vh;
+}
 .w-0 {
   width: 0px;
 }
@@ -986,6 +995,9 @@ video {
 }
 .max-w-screen-md {
   max-width: 768px;
+}
+.max-w-lg {
+  max-width: 32rem;
 }
 .grow {
   flex-grow: 1;
@@ -1041,6 +1053,9 @@ video {
 }
 .gap-16 {
   gap: 4rem;
+}
+.self-end {
+  align-self: flex-end;
 }
 .self-center {
   align-self: center;
@@ -1147,6 +1162,12 @@ video {
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
 }
+.bg-\[url\(\'\/u\'\)\] {
+  background-image: url('/u');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-17-shop\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17-shop.jpg');
+}
 .bg-\[length\:50vw\] {
   background-size: 50vw;
 }
@@ -1214,6 +1235,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .pb-1\/1 {
   padding-bottom: 100%;
@@ -1471,5 +1496,12 @@ body p {
 @media (min-width: 1024px) {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
