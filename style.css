@@ -45,3 +45,6 @@ body p {
     margin-bottom: 1rem;
 }
 
+.shopify-button {
+    @apply uppercase bg-dark text-white px-8 py-4 inline-block
+}

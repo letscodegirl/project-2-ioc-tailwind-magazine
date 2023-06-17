@@ -816,6 +816,9 @@ video {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .fixed {
   position: fixed;
 }
@@ -862,6 +865,10 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .-ml-15p {
   margin-left: -15%;
@@ -929,6 +936,9 @@ video {
 .hidden {
   display: none;
 }
+.aspect-landscape {
+  aspect-ratio: 3 / 2;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -941,11 +951,11 @@ video {
 .min-h-\[60\] {
   min-height: 60;
 }
-.min-h-50 {
-  min-height: 50vh;
-}
 .w-0 {
   width: 0px;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .w-10 {
   width: 2.5rem;
@@ -989,6 +999,9 @@ video {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1045,6 +1058,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.border-dark {
+  border-color: rgb(63 63 70);;
+}
 .border-rose-600 {
   --tw-border-opacity: 1;
   border-color: rgb(225 29 72 / var(--tw-border-opacity));
@@ -1072,6 +1088,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
+.bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1092,50 +1112,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
-.bg-\[\] {
-  background-color: ;
-}
-.bg-\[url\] {
-  background-color: url;
-}
 .bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-1.jpg');
 }
 .bg-\[url\(\'\/uploads\/travel\/travel-2\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-2.jpg');
 }
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-.bg-\[url\(\'uploads\'\)\] {
-  background-image: url('uploads');
-}
-.bg-\[url\(\'\/uploads\/travel\'\)\] {
-  background-image: url('/uploads/travel');
-}
-.bg-\[url\(\'\/uploads\/travel\/\'\)\] {
-  background-image: url('/uploads/travel/');
-}
-.bg-\[url\(\'\/upluploads\/travel\/blog-bg-16\.jpg\'\)\] {
-  background-image: url('/upluploads/travel/blog-bg-16.jpg');
-}
-.bg-\[url\(\'\/uploads\/travel\/blog-bg-16\.jpg\'\)\] {
-  background-image: url('/uploads/travel/blog-bg-16.jpg');
-}
-.bg-\[url\(\'\/\'\)\] {
-  background-image: url('/');
-}
-.bg-\[url\(\'\{\{\}\}\'\)\] {
-  background-image: url('{{}}');
-}
-.bg-\[url\(\'\{\{page\.featured\}\}\'\)\] {
-  background-image: url('{{page.featured}}');
-}
-.bg-\[url\(\'\{\{page\.featured-im\}\}\'\)\] {
-  background-image: url('{{page.featured-im}}');
-}
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
+}
+.bg-\[length\:50vw\] {
+  background-size: 50vw;
 }
 .bg-cover {
   background-size: cover;
@@ -1143,12 +1130,22 @@ video {
 .bg-center {
   background-position: center;
 }
+.bg-left {
+  background-position: left;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
 .p-1 {
   padding: 0.25rem;
+}
+.p-10p {
+  padding: 10%;
 }
 .p-2 {
   padding: 0.5rem;
@@ -1212,6 +1209,9 @@ video {
 .font-display {
   font-family: Italiana, serif;
 }
+.font-sans {
+  font-family: Montserrat, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -1237,6 +1237,10 @@ video {
 }
 .text-sm {
   font-size: 0.875rem;;
+  line-height: 1.2;
+}
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 .text-xs {
@@ -1326,6 +1330,18 @@ body p {
     margin-bottom: 1rem;
 }
 
+.shopify-button {
+  display: inline-block;
+  background-color: rgb(63 63 70);;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:bg-zinc-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -1413,4 +1429,3 @@ body p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-

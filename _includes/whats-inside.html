@@ -1,0 +1,48 @@
+<div id="gallery">
+  <div class="relative aspect-landscape mb-2">
+
+      <!-- After image in the foreground  -->
+      <div class="absolute inset-0 bg-image bg-[length:50vw] bg-left pointer-events-none" id="image"
+           style="background-image:url('{{page.gallery[0]}}')"></div>
+       
+  </div>
+  <div class="grid grid-cols-6 gap-2" id="alt-image-grid">
+      {% for image in page.gallery %}
+      
+      <div class="col-span-1 aspect-landscape relative">
+          <img src="{{image}}" data-pre-image="{{image}}"
+              class="absolute inset-0 object-cover object-center h-full w-full">
+      </div>
+      {% endfor %}
+  </div>
+</div>
+
+
+
+<!-- Essential Javascript-->
+
+<script src="https://unpkg.com/gsap@3.12.1/dist/gsap.min.js"></script>
+<script>
+
+
+//   
+
+// Open your HTML file in a web browser, and you should now have a slider that adjusts its width based on the mouse position.
+
+// By following these beginner-friendly instructions, you should be able to successfully implement the provided GSAP functionality for the slider on your web page.
+
+
+// change image functionality
+const altImageGrid = document.querySelector('#alt-image-grid')
+const altImages = altImageGrid.querySelectorAll('img')
+
+altImages.forEach(img => {
+img.addEventListener('click', () => {
+  console.log(img.src,img.dataset.priImage)
+  gsap.set('#image',{
+    backgroundImage: `url('${img.src}')`
+  })
+})
+});
+
+</script> 

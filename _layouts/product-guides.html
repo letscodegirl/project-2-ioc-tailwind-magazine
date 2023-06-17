@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<!-- Header -->
+
+<section class="grid grid-cols-2">
+    <div class="col-span-1">
+        <h1 class="text-5xl uppercase font-display tracking-widest">{{page.title}}</h1>
+        <h2>{{page.subtitle}}</h2>
+        <p>{{page.description}}</p>
+        <a class="mt-4 mb-4 shopify-button" href="#"> Buy Now </a>
+    </div>
+    <div style="background-image: url('{{page.featured-image}}');" class="col-span-1">
+
+    </div>
+</section>
+
+<section>
+    <h2> What's Inside </h2>
+    <div>
+        {% include whats-inside.html %}
+    </div>
+</section>

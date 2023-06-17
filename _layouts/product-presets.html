@@ -6,10 +6,10 @@ layout: default
 
 <section class="grid grid-cols-2">
     <div class="col-span-1">
-        <h1>{{page.title}}</h1>
+        <h1 class="text-5xl uppercase font-display tracking-widest">{{page.title}}</h1>
         <h2>{{page.subtitle}}</h2>
         <p>{{page.description}}</p>
-        <a href="#"> Buy Now </a>
+        <a class="mt-4 mb-4 shopify-button" href="#"> Buy Now </a>
     </div>
     <div class="col-span-1 bg-[url('{{page.featured-image}}')]">
 
@@ -18,29 +18,26 @@ layout: default
 
 <!-- Before & After -->
 
-<section class="grid grid-cols-3">
-    <div class="col-span-2">
-        <div class="min-h-60" style="background-image: url('{{page.featured-image}}');">
+<section class="bg-stone-100 p-5p">
+    <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
+        <div class="col-span-3 p-8">
+
+            {% include before-and-after-slider.html %}
+
         </div>
-        <div class="grid grid-cols-6">
-            <div class="col-span-1 aspect-square" style="background-image: url('{{page.featured-image}}');"></div>
-            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
-            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
-            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
-            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
-            <div class="col-span-1" style="background-image: url('{{page.featured-image}}');"></div>
+        <div class="col-span-2 p-8 self-center">
+            <h2 class="text-2xl uppercase font-display tracking-widest"> Before & After </h2>
+            {{page.before_after_description}}
         </div>
-    </div>
-    <div class="col-span-1">
-        <h2> Before & After </h2>
-        <p>{{page.before_after_description}}</p>
+
     </div>
 </section>
+
 
 <!-- How to -->
 <section class="grid grid-cols-3">
     <div class="col-span-1">
-    <h2>{{site.data.preset-settings.instructions.heading}}</h2>
+    <h2 class="text-2xl uppercase font-display tracking-widest">{{site.data.preset-settings.instructions.heading}}</h2>
     <p>{{site.data.preset-settings.instructions.description_html}}</p>
     </div>
     <div class="col-span-2" style="background-image: url('{{page.featured-image}}');">
@@ -49,19 +46,51 @@ layout: default
 </section>
 
 <!-- FAQ -->
-<section>
-    <h2>FAQ's</h2>
-    <div class="flex justify-between">
-        {% for item in site.data.preset-settings.faq %}
-        <h3>{{item.question}}</h3>
-        <p>{{item.answer}}</p>
-        {% endfor %}
-    </div>
+<section class="p-10p">
+	<h2 class="text-4xl uppercase border-b border-dark pb-8">FAQ's</h2>
+	<ul>
+		{% for item in site.data.preset-settings.faq %}
+        <li x-data="{ open: false }">
+
+			<button @click="open = ! open" class="flex justify-between border-b border-dark my-8">
+				<h3 class="font-sans text-xl font-normal">{{item.question}}</h3>
+                <span>
+                    <
+
+                </span>
+            </button>
+                <p x-show="open" @click.outside="open = false">{{item.answer}}</p>
+		
+    </li>
+		{% endfor %}
+	</ul>
 </section>
+
+
+<!-- FAQ
+<section class="p-10p">
+	<h2 class="text-4xl uppercase border-b border-dark pb-8">FAQ's</h2>
+	<ul>
+		{% for item in site.data.preset-settings.faq %}
+         
+		<li class="flex justify-between border-b border-dark my-8">
+			<div>
+				<h3 class="font-sans text-xl font-normal">{{item.question}}</h3>
+				<p class="hidden">{{item.answer}}</p>
+			</div>
+			<span>></span>
+		</li>
+		{% endfor %}
+	</ul>
+</section> -->
+
 
 <!-- Related Posts -->
 
-
+<!-- <div x-data="{ open: false }">
+    <button @click="open = ! open">Toggle</button>
+<div x-show="open" @click.outside="open = false">Contents...</div>
+        </div> -->
 
 
 <!-- 
