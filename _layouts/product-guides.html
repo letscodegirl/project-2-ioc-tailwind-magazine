@@ -37,3 +37,9 @@ layout: default
         <p> loremEsse proident exercitation nisi tempor fugiat amet ex. Elit do mollit nostrud eiusmod. Minim occaecat nostrud labore amet et velit incididunt ad ullamco anim magna minim. Nisi aliqua cillum quis elit ad ad sit ipsum officia cillum nulla. </p>
     </div>
 </section>
+
+<!-- related products -->
+
+{% assign relevant-products = site.products-guides | where_exp:"product","product.url != page.url" %}
+
+{% include related-products.html relevant-products=relevant-products %}

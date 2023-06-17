@@ -4,8 +4,6 @@
     
     <div class="grid grid-cols-3 gap-2 align-items-center">
 
-    {% assign relevant-posts = site.products-presets | where_exp:"product","product.url != page.url" %}
-
     {% for product in relevant-products limit:3 %}
 
     <!-- Background image -->

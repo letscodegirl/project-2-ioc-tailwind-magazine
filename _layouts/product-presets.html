@@ -54,12 +54,16 @@ layout: default
     </div>
 </section>
 
+<!-- related products -->
+{% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
+
+{% include related-products.html relevant-products=relevant-products %}
 
 <!-- FAQ
 <section class="p-10p">
 	<h2 class="text-4xl uppercase border-b border-dark pb-8">FAQ's</h2>
 	<ul>
-		{% for item in site.data.preset-settings.faq %}
+		for item in site.data.preset-settings.faq
          
 		<li class="flex justify-between border-b border-dark my-8">
 			<div>
@@ -68,7 +72,7 @@ layout: default
 			</div>
 			<span>></span>
 		</li>
-		{% endfor %}
+		endfor
 	</ul>
 </section> -->
 
@@ -76,8 +80,8 @@ layout: default
 <!-- Related Posts -->
 
 <!-- <div x-data="{ open: false }">
-    <button @click="open = ! open">Toggle</button>
-<div x-show="open" @click.outside="open = false">Contents...</div>
+    <button click="open = ! open">Toggle</button>
+<div x-show="open" click.outside="open = false">Contents...</div>
         </div> -->
 
 
