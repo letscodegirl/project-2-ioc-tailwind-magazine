@@ -45,25 +45,13 @@ layout: default
     </div>
 </section>
 
-<!-- FAQ -->
-<section class="p-10p">
-	<h2 class="text-4xl uppercase border-b border-dark pb-8">FAQ's</h2>
-	<ul>
-		{% for item in site.data.preset-settings.faq %}
-        <li x-data="{ open: false }">
+<!-- Frequently Asked Questions -->
+<section class="p-5p bg-stone-200">
+    <div class="max-w-screen-xl mx-auto">
+        <h2> FAQ'S </h2>
+        {% include accordion.html  accordion-source=site.data.preset-settings.faqs %}
 
-			<button @click="open = ! open" class="flex justify-between border-b border-dark my-8">
-				<h3 class="font-sans text-xl font-normal">{{item.question}}</h3>
-                <span>
-                    <
-
-                </span>
-            </button>
-                <p x-show="open" @click.outside="open = false">{{item.answer}}</p>
-		
-    </li>
-		{% endfor %}
-	</ul>
+    </div>
 </section>
 
 

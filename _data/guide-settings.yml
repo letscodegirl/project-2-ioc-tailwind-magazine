@@ -1,0 +1,9 @@
+table-of-contents: 
+  - title: This is a question
+    description: This is an answer that's only shown when you click on it. 
+  - title: This is another question
+    description: This is an answer that's only shown when you click on it. 
+  - title: This is one more question
+    description: This is an answer that's only shown when you click on it. 
+  - title: And again, I'm not even bored
+    description: This is an answer that's only shown when you click on it. 

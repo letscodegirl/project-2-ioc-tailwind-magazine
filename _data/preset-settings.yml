@@ -2,12 +2,15 @@ instructions:
   heading: How to use your presets
   description_html: lorem Enim ut consectetur ad non ad duis aute excepteur labore. Et nisi ipsum aliquip sit reprehend. In laborum incididunt magna amet consequat irure quis quis nulla. Nisi elit quis Lorem do officia. 
 presets-instructions-vimeo-id: 663318015
-faq:
-  - question: This is my first question
-    answer: Ad officia ex magna amet duis proident magna. In laborum incididunt magna amet consequat irure quis quis nulla. Nisi elit quis Lorem do officia. Est aute sit et consectetur mollit elit do fugiat. Consequat consectetur non est sint anim dolore cupidatat incididunt fugiat ad excepteur ad.
-  - question: This is my second question
-    answer: Ad officia ex magna amet duis proident magna. In laborum incididunt magna amet consequat irure quis quis nulla. Nisi elit quis Lorem do officia. Est aute sit et consectetur mollit elit do fugiat. Consequat consectetur non est sint anim dolore cupidatat incididunt fugiat ad excepteur ad.
-  - question: This is my third question
-    answer: Ad officia ex magna amet duis proident magna. In laborum incididunt magna amet consequat irure quis quis nulla. Nisi elit quis Lorem do officia. Est aute sit et consectetur mollit elit do fugiat. Consequat consectetur non est sint anim dolore cupidatat incididunt fugiat ad excepteur ad.
-  - question: This is my fourth question
-    answer: Ad officia ex magna amet duis proident magna. In laborum incididunt magna amet consequat irure quis quis nulla. Nisi elit quis Lorem do officia. Est aute sit et consectetur mollit elit do fugiat. Consequat consectetur non est sint anim dolore cupidatat incididunt fugiat ad excepteur ad.
+before-and-after-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, id quod corporis magni ipsam omnis labore sit commodi cum. Quos, consequatur accusantium? Ut corporis qui architecto. Labore nisi alias placeat.
+presets-instructions_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, id quod corporis magni ipsam omnis labore sit commodi cum. Quos, consequatur accusantium? Ut corporis qui architecto. Labore nisi alias placeat.
+presets-instructions-vimeo-id: 663318015
+faqs: 
+  - title: This is a question
+    description: This is an answer that's only shown when you click on it. 
+  - title: This is another question
+    description: This is an answer that's only shown when you click on it. 
+  - title: This is one more question
+    description: This is an answer that's only shown when you click on it. 
+  - title: And again, I'm not even bored
+    description: This is an answer that's only shown when you click on it. 
