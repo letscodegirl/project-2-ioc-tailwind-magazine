@@ -879,6 +879,9 @@ video {
 .-mt-1 {
   margin-top: -0.25rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -911,12 +914,6 @@ video {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.mb-0 {
-  margin-bottom: 0px;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -960,17 +957,11 @@ video {
 .min-h-60 {
   min-height: 60vh;
 }
-.min-h-\[60\] {
-  min-height: 60;
-}
-.min-h-50 {
-  min-height: 50vh;
-}
-.min-h-70 {
-  min-height: 70vh;
-}
 .min-h-80 {
   min-height: 80vh;
+}
+.min-h-\[60\] {
+  min-height: 60;
 }
 .w-0 {
   width: 0px;
@@ -995,12 +986,6 @@ video {
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-screen-md {
-  max-width: 768px;
-}
-.max-w-lg {
-  max-width: 32rem;
 }
 .grow {
   flex-grow: 1;
@@ -1045,6 +1030,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-16 {
+  gap: 4rem;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1054,9 +1042,6 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
-.gap-16 {
-  gap: 4rem;
-}
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
@@ -1065,9 +1050,6 @@ video {
 .divide-black > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-divide-opacity));
-}
-.self-end {
-  align-self: flex-end;
 }
 .self-center {
   align-self: center;
@@ -1093,14 +1075,14 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t-2 {
-  border-top-width: 2px;
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-t {
   border-top-width: 1px;
 }
-.border-b-2 {
-  border-bottom-width: 2px;
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -1148,6 +1130,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1168,9 +1154,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+.bg-\[url\(\'\/uploads\/blog-bg-17-shop\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17-shop.jpg');
+}
+.bg-\[url\(\'\/uploads\/travel\/blog-bg-17-shop\.jpg\'\)\] {
+  background-image: url('/uploads/travel/blog-bg-17-shop.jpg');
 }
 .bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-1.jpg');
@@ -1180,21 +1168,6 @@ video {
 }
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
-}
-.bg-\[url\(\'\/u\'\)\] {
-  background-image: url('/u');
-}
-.bg-\[url\(\'\/uploads\/blog-bg-17-shop\.jpg\'\)\] {
-  background-image: url('/uploads/blog-bg-17-shop.jpg');
-}
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-.bg-\[url\(\'\/uploads\/blog-bg-17-\.jpg\'\)\] {
-  background-image: url('/uploads/blog-bg-17-.jpg');
-}
-.bg-\[url\(\'\/uploads\/blog-bg-17-desertguy\.jpg\'\)\] {
-  background-image: url('/uploads/blog-bg-17-desertguy.jpg');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;
@@ -1237,9 +1210,6 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.p-16 {
-  padding: 4rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1264,10 +1234,6 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .pb-1\/1 {
   padding-bottom: 100%;
 }
@@ -1277,6 +1243,9 @@ video {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1285,9 +1254,6 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 .text-left {
   text-align: left;
@@ -1524,12 +1490,5 @@ body p {
 @media (min-width: 1024px) {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
