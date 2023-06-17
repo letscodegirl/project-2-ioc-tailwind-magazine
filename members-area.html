@@ -8,16 +8,16 @@ banner:
       image_path: /uploads/travel/travel-2.jpg
 members-content: 
     - title: This is a title
-      content_html: some content 
+      content_html: Ad ut sit cillum cillum amet minim est deserunt ad cillum laborum. Nulla ullamco esse mollit duis nisi ullamco pariatur pariatur Lorem excepteur amet. Lorem exercitation aute cupidatat dolore. Ea in fugiat est aute cillum exercitation deserunt tempor ea occaecat aute est et in. Amet ex nostrud pariatur consequat ex ipsum ipsum fugiat pariatur enim. Qui voluptate et ex magna aute eu in ex eu esse amet non exercitation.
     - title: This is a second title 
-      content_html: some content 
+      content_html: Ad ut sit cillum cillum amet minim est deserunt ad cillum laborum. Nulla ullamco esse mollit duis nisi ullamco pariatur pariatur Lorem excepteur amet. Lorem exercitation aute cupidatat dolore. Ea in fugiat est aute cillum exercitation deserunt tempor ea occaecat aute est et in. Amet ex nostrud pariatur consequat ex ipsum ipsum fugiat pariatur enim. Qui voluptate et ex magna aute eu in ex eu esse amet non exercitation.
     - title: This is a third title 
-      content_html: some content
+      content_html: Ad ut sit cillum cillum amet minim est deserunt ad cillum laborum. Nulla ullamco esse mollit duis nisi ullamco pariatur pariatur Lorem excepteur amet. Lorem exercitation aute cupidatat dolore. Ea in fugiat est aute cillum exercitation deserunt tempor ea occaecat aute est et in. Amet ex nostrud pariatur consequat ex ipsum ipsum fugiat pariatur enim. Qui voluptate et ex magna aute eu in ex eu esse amet non exercitation.
 ---
 
 {% include hero-banner.html %}
 
-<section class="min-h-80 p-5p grid grid-cols-4">
+<section class="min-h-80 p-5p grid grid-cols-4 divide-x-2 divide-black">
 
     <div class="col-span-1">
 
@@ -30,7 +30,8 @@ members-content:
     <div class="col-span-3">
 
         {% for item in page.members-content %}
-        <div id="{{item.title | slugify}}" class="p-5p border-b-2"> 
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-b-black"> 
+            <h2 class="text-4xl uppercase font-display tracking-widest"> {{ item.title }} </h2>
             {{ item.content_html }}
         </div>
 

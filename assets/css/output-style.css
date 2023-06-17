@@ -1057,6 +1057,15 @@ video {
 .gap-16 {
   gap: 4rem;
 }
+.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(2px * var(--tw-divide-x-reverse));
+  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+}
+.divide-black > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
+}
 .self-end {
   align-self: flex-end;
 }
@@ -1107,6 +1116,10 @@ video {
 .border-zinc-800 {
   --tw-border-opacity: 1;
   border-color: rgb(39 39 42 / var(--tw-border-opacity));
+}
+.border-b-black {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-dark {
   background-color: rgb(63 63 70);;
@@ -1176,6 +1189,12 @@ video {
 }
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-17-\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17-.jpg');
+}
+.bg-\[url\(\'\/uploads\/blog-bg-17-desertguy\.jpg\'\)\] {
+  background-image: url('/uploads/blog-bg-17-desertguy.jpg');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;
