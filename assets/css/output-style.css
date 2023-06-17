@@ -969,6 +969,9 @@ video {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-80 {
+  min-height: 80vh;
+}
 .w-0 {
   width: 0px;
 }
@@ -1087,6 +1090,9 @@ video {
 .border-t {
   border-top-width: 1px;
 }
+.border-b-2 {
+  border-bottom-width: 2px;
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1167,6 +1173,9 @@ video {
 }
 .bg-\[url\(\'\/uploads\/blog-bg-17-shop\.jpg\'\)\] {
   background-image: url('/uploads/blog-bg-17-shop.jpg');
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 .bg-\[length\:50vw\] {
   background-size: 50vw;
