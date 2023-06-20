@@ -34,7 +34,7 @@ div {
 
 .tag {
 
-    @apply uppercase text-zinc-600 text-xs tracking-wide;
+    @apply uppercase text-zinc-600 text-xs tracking-wide bg-gray-300 px-2 py-1 font-bold;
 }
 
 body {
@@ -47,4 +47,8 @@ body p {
 
 .shopify-button {
     @apply uppercase bg-dark text-white px-8 py-4 inline-block
+}
+
+.tag.active {
+    @apply bg-slate-200
 }

@@ -1,0 +1,30 @@
+---
+layout: default
+title: Shop All
+---
+
+<section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
+
+	<h2 class="text-center text-4xl mb-4"> Shop all products </h2> 
+
+	<div class="filter text-center text-bold space-x-4 mb-6"> 
+		<a class="tag" href="#" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
+        <a class="tag" href="#" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a class="tag" href="#" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
+	</div>
+
+	<div class="grid grid-cols-3 gap-4">
+
+	{% assign all_products = site.products-guides | concat: site.products-presets | sort: 'title' %}
+
+	{% for product in all_products %}
+		
+		<div class="{{product.type | slugify }}" x-show="filter === 'all' || filter === '{{ product.type | slugify }}'">
+		{% include product-loop-item.html %}
+		</div>
+			
+	{% endfor %}
+
+	</div>
+
+</section>
