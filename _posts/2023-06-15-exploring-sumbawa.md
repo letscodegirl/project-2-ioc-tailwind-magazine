@@ -5,6 +5,9 @@ description: Surfing teaches you to appreciate the finer things in life, to be p
 author: Tina May
 featured_image: /uploads/travel/travel-2.jpg
 featured: true
+categories:
+  - travel
+  - life
 intro_heading: This is a heading
 banner:
     image: 
