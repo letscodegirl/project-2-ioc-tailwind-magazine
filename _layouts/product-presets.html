@@ -6,7 +6,7 @@ layout: default
 
 <section class="grid grid-cols-2">
     <div class="col-span-1 p-5p">
-        <h1 class="text-5xl uppercase font-display tracking-widest">{{page.title}}</h1>
+        <h1 class="text-2xl uppercase font-display tracking-widest">{{page.title}}</h1>
         <h2 class="mt-5">{{page.subtitle}}</h2>
         <p>{{page.description}}</p>
         {% include buy-button.html buy-button-id=page.buy-button-id %}
@@ -25,8 +25,8 @@ layout: default
             {% include before-and-after-slider.html %}
 
         </div>
-        <div class="col-span-2 p-8 self-center">
-            <h2 class="text-2xl uppercase font-display tracking-widest"> Before & After </h2>
+        <div class="col-span-2 p-8 self-center pb-5">
+            <h2 class="text-2xl uppercase font-display tracking-widest mb-5"> Before & After </h2>
             {{page.before_after_description}}
         </div>
 
@@ -35,9 +35,9 @@ layout: default
 
 
 <!-- How to -->
-<section class="grid grid-cols-3">
-    <div class="col-span-1">
-    <h2 class="text-2xl uppercase font-display tracking-widest">{{site.data.preset-settings.instructions.heading}}</h2>
+<section class="grid grid-cols-3 p-5p items-center">
+    <div class="col-span-1 p-5p">
+    <h2 class="text-2xl uppercase font-display tracking-widest mb-5">{{site.data.preset-settings.instructions.heading}}</h2>
     <p>{{site.data.preset-settings.instructions.description_html}}</p>
     </div>
     <div class="col-span-2" style="background-image: url('{{page.featured-image}}');">
@@ -48,7 +48,7 @@ layout: default
 <!-- Frequently Asked Questions -->
 <section class="p-5p bg-stone-200">
     <div class="max-w-screen-xl mx-auto">
-        <h2> FAQ'S </h2>
+        <h2 class="text-2xl uppercase font-display tracking-widest mb-5"> FAQ'S </h2>
         {% include accordion.html  accordion-source=site.data.preset-settings.faqs %}
 
     </div>
