@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia, nesciun
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt voluptatibus consequuntur deserunt expedita. Soluta explicabo sapiente facere voluptatibus praesentium nam maiores at doloribus voluptatem sint laudantium, totam consectetur? Molestiae.
 </p>
 <blockquote>
-    blablabla
+    Follow That Dream
 </blockquote>
 
 <img src="/uploads/travel/travel-4.jpg" alt="another boat in Sumbawa">

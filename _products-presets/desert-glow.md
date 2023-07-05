@@ -7,7 +7,7 @@ price: $35
 type: preset
 buy-button-id: 1686971064446
 
-featured-image: /uploads/travel/blog-bg-16.jpg
+featured-image: /uploads/travel/blog-bg-14.jpg
 before_after_description: Aliqua ut ullamco elit labore. Commodo adipisicing incididunt sint fugiat Lorem anim eu. Veniam officia id excepteur mollit esse ipsum sunt occaecat sunt mollit.
 slug: desert-glow
 comparison-images: 

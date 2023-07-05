@@ -1,17 +1,23 @@
 ---
 layout: default
 title: Homepage
+banner:
+  heading: A whole new world 
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores? 
+  image:
+    image_path: /uploads/travel/travel-7.jpg
+    alt: A placeholder alt description
 text_blurbs: 
   heading: A fascinating heading about the site
   description_html: >-
    Deserunt magna adipisicing labore minim eu excepteur culpa duis ullamco cillum amet ex dolore elit. Dolore qui officia eiusmod commodo adipisicing reprehenderit Lorem deserunt eiusmod in cupidatat consequat officia. Nulla ex irure ex exercitation nisi mollit veniam. In consequat voluptate magna duis elit dolore. Et cillum cupidatat ut cillum. Aute incididunt occaecat veniam commodo culpa pariatur deserunt sunt magna nisi laborum amet.<br></br>
 
-   ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero ad non sit eaque sint necessitatibus. Nulla temporibus rerum consequuntur ut nostrum, totam, ducimus odio, expedita unde quibusdam adipisci architecto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores?
+   ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero ad non sit eaque sint necessitatibus. Nulla temporibus rerum consequuntur ut nostrum, totam, ducimus odio, expedita unde quibusdam adipisci architecto! 
   button:
-    text: 
+    text: READ MORE
     url: "#"
   image:
-    image_path: /uploads/travel/travel-3.jpg
+    image_path: /uploads/travel/blog-bg-14.jpg
     alt: A placeholder alt description
 itinerary: 
   heading: Upcoming travel destinations
@@ -32,12 +38,7 @@ itinerary:
     - title: Africa
       date: 10 Jul - 20 Aug 2023
       description: Deep culture and wildlifes!
-banner:
-  heading: A whole new world 
-  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio rem debitis quam ex veniam non accusantium cum qui. Quibusdam sed quo sit et molestiae earum, laborum illo facilis similique dolores? 
-  image:
-    image_path: /uploads/travel/travel-1.jpg
-    alt: A placeholder alt description
+
 blog:
   heading: Recently on the blog
   button: 
@@ -58,15 +59,15 @@ seo:
 
 </section>
 
-<section class="grid grid-cols-2 p-5p bg-stone-100">
+<section class="p-5p bg-stone-100 grid grid-cols-2">
   <img src="{{ page.text_blurbs.image.image_path }}" 
     alt="{{ page.text_blurbs.image.alt | default: page.text_blurbs.heading }}">
-  <div class="flex items-center">
-    <div>
+  <div>
+    <div class="ml-10 pt-8">
       
       <h2 class="p-8 font-display text-4xl max-w-sm text-center -ml-[20%] bg-stone-300"> {{ page.text_blurbs.heading }} </h2>
-      <div class="ml-10 pt-8 pb-8 prose"> {{ page.text_blurbs.description_html }} </div>
-      <a class="ml-10 text-2xl uppercase underline font-display tracking-widest" href="{{ page.text_blurbs.button.url }}">
+      <div class="ml-10 pt-8 prose"> {{ page.text_blurbs.description_html }} </div>
+      <a class="ml-10 sm:text-xl font-display tracking-widest" href="{{ page.text_blurbs.button.url }}">
         {{ page.text_blurbs.button.text }}
       </a>
     </div>
@@ -111,7 +112,7 @@ seo:
                 style="background-image:url( '{{ post.featured_image }}' );"></div>
 
                 <!-- Text container  -->
-                <div class="p-4 relative">
+                <div class="p-4 relative font-serif">
                  
                     <h2 class="pb-3 font-serif text-2xl"> {{ post.title }} </h2>
                  

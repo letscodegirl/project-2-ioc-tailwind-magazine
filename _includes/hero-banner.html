@@ -4,7 +4,7 @@
     <div class="-ml-15p py-10p px-5p">
     
         <h1 class="font-display text-[13vw] text-white leading-[0.9] mb-16 md:max-w-[90%]">{{page.banner.heading | default: page.title}}</h1>
-        <p class="uppercase text-white md:max-w-2xl text-2xl font-normal leading-normal"> {{page.banner.description | default: page.description}} </p>
+        <p class="uppercase text-white max-w-2xl text-xl font-display leading-normal"> {{page.banner.description | default: page.description}} </p>
         {% if.page.banner.button.url and page.banner.button.text %}
         <a href="{{page.banner.button.url}}">{{page.banner.button.text}}</a>
         {% endif %}
