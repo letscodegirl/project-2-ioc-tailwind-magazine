@@ -18,7 +18,7 @@ navigation:
     title: "Blog"
   - url: /shop
     title: "Shop"
-  - url: "#"
+  - url: "/members-login"
     title: "Members Login"
 design:
   dark-text_color: "rgb(60,60,65)"

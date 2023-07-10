@@ -4,7 +4,7 @@ title: Exploring Sumbawa
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
-author: '`dan'
+author: 'dan'
 featured: true
 categories:
   - travel
@@ -13,9 +13,9 @@ featured_image: /uploads/travel/travel-1.jpg
 page_blocks:
   - _id: banner
     title: Image Banner
-    heading: This is your heading
-    sub-heading: And this is your sub-heading
-    text-color: '#000000'
+    heading: 
+    sub-heading: 
+    text-color: '#ffffff'
     banner-height: min-h-60
     banner-image: /uploads/travel/travel-1.jpg
     background-position: bg-center
@@ -36,9 +36,9 @@ page_blocks:
     number-of-columns-desktop:
       - grid-cols-3
     columns:
-      - background-image: /uploads/travel/travel-1.jpg
+      - background-image: /uploads/travel/blog-bg-1.jpg
         aspect-ratio: aspect-square
-        content_html: <p>test</p>
+        content_html: <p>lorem something</p>
       - background-image: /uploads/travel/travel-3.jpg
         aspect-ratio: square
         content_html: <p>This is some text</p>

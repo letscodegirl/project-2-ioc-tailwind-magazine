@@ -1008,9 +1008,6 @@ video {
 .max-w-sm {
   max-width: 24rem;
 }
-.max-w-xl {
-  max-width: 36rem;
-}
 .grow {
   flex-grow: 1;
 }
@@ -1041,9 +1038,6 @@ video {
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .flex-nowrap {
   flex-wrap: nowrap;
@@ -1199,9 +1193,6 @@ video {
 .bg-\[url\(\'\/uploads\/travel\/blog-bg-17-shop\.jpg\'\)\] {
   background-image: url('/uploads/travel/blog-bg-17-shop.jpg');
 }
-.bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
-  background-image: url('/uploads/travel/travel-1.jpg');
-}
 .bg-\[url\(\'\/uploads\/travel\/travel-2\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-2.jpg');
 }
@@ -1275,14 +1266,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.py-15p {
-  padding-top: 15%;
-  padding-bottom: 15%;
 }
 .pb-1\/1 {
   padding-bottom: 100%;
@@ -1393,9 +1376,6 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-.underline {
-  text-decoration-line: underline;
 }
 .no-underline {
   text-decoration-line: none;
@@ -1529,18 +1509,8 @@ body p {
   .sm\:col-span-8 {
     grid-column: span 8 / span 8;
   }
-  .sm\:max-w-2xl {
-    max-width: 42rem;
-  }
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 1.2;
   }
   .sm\:text-xl {
     font-size: 1.25rem;
@@ -1575,9 +1545,5 @@ body p {
   }
   .md\:overflow-x-auto {
     overflow-x: auto;
-  }
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.2;
   }
 }

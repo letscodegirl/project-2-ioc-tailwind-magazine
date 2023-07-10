@@ -96,7 +96,14 @@ seo:
 <!-- {{site.data.site-settings.global-cta-options}} -->
 <!------------------------ Featured blog loop ------------------------>
 <section class="p-5p">
-<h2 class="font-display text-4xl tracking-widest uppercase text-center pb-20"> Recently on the blog... </h2>
+  <div class="max-w-screen-xl mx-auto flex justify-between mb-4">
+    
+    <!-- this is a html icon for a left and right arrow ---> 
+   <div class="text-3xl">&#8249;</div>
+   <h2 class="uppercase font-serif text-2xl tracking-wide"> Recently on the blog </h2>
+   <div class="text-3xl">&#8250;</div>
+   
+ </div>
     <div class="mx-auto grid grid-cols-3 gap-6">
 
 
@@ -120,8 +127,6 @@ seo:
                     <span>
                       {{ page.blog.button.text }}
                     </span>
-            
-              
 
                 </div>
             </a>
@@ -131,5 +136,7 @@ seo:
     </div>
  
 </section> 
+
+
 
 
